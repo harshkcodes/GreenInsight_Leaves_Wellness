@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Common Diseases</title>
+</head>
+<body>
+    <h1>Most Common Diseases</h1>
+    <ul>
+        {% for disease, count in most_common_diseases %}
+            <li>{{ disease }} - {{ count }} occurrences</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
